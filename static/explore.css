@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* ===== NAVIGATION BAR ===== */
+nav {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+.navtitle {
+    font-size: 22px;
+    font-weight: bold;
+    color: gold;
+}
+
+.navbutton a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: silver;
+    font-weight: bold;
+    padding: 8px 14px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.navbutton a:hover {
+    background-color: gold;
+    color: black;
+}
+
+/* ===== SECTION TITLES ===== */
+h3 {
+    font-size: 30px;
+    margin: 50px 0 20px 0;
+    color: black;
+}
+
+/* ===== FLEX CONTAINER ===== */
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto 60px;
+}
+
+/* ===== BOX STYLE ===== */
+.box {
+    width: 300px;
+    height: 200px;
+    background: white;
+    border: 4px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    border-color: gold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.box h2 {
+    font-size: 28px;
+    color: gold;
+}
+
+/* ===== RESPONSIVENESS ===== */
+@media (max-width: 900px) {
+    .box {
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .box {
+        width: 90%;
+        height: 150px;
+    }
+
+    .box h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+}

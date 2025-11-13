@@ -1,0 +1,62 @@
+* {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("IMG/initial page wallpaper.png");
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            height: 100vh;
+        }
+
+        nav {
+            width: 100%;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+        }
+
+        .navtitle {
+            font-size: 22px;
+            font-weight: bold;
+            color: #004d80;
+        }
+
+        .navbutton a {
+            text-decoration: none;
+            color: #007acc;
+            font-weight: bold;
+            padding: 6px 12px;
+            border: 1px solid #007acc;
+            border-radius: 3px;
+            margin-left: 10px;
+        }
+
+        .aboutcontainer {
+            max-width: 900px;
+            margin: 80px auto;
+            background: white;
+            padding: 30px 40px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #004d80;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #004d80;
+            margin-top: 25px;
+        }
+
+        p {
+            text-align: justify;
+            color: #333;
+            line-height: 1.6;
+            font-size: 16px;
+        }

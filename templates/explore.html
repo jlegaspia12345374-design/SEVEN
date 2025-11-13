@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='explore.css') }}">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="navtitle">LUXURIOUS EARTH</div>
+        <div class="navbutton">
+            <a href="{{ url_for('login') }}">Login</a>
+            <a href="{{ url_for('register') }}">Register</a>
+            <a href="{{ url_for('explore') }}">Explore</a>
+            <a href="{{ url_for('order') }}">Order</a>
+            <a href="{{ url_for('admin') }}">Admin</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('profile') }}">Profile</a>
+            <a href="{{ url_for('home') }}">Home</a>
+        </div>
+    </nav>
+
+    <!-- ACCESSORIES -->
+    <center><h3><b>ACCESSORIES</b></h3></center>
+    <div class="section">
+        <div id="box1" class="box"><h2>EARRINGS</h2></div>
+        <div id="box2" class="box"><h2>NECKLACE</h2></div>
+        <div id="box3" class="box"><h2>BRACELET</h2></div>
+        <div id="box4" class="box"><h2>RING</h2></div>
+        <div id="box5" class="box"><h2>ANKLET</h2></div>
+        <div id="box6" class="box"><h2>ARMLET</h2></div>
+        <div id="box7" class="box"><h2>LEGLET</h2></div>
+    </div>
+
+    <!-- METALS -->
+    <center><h3><b>METALS</b></h3></center>
+    <div class="section">
+        <div id="box8" class="box"><h2>GOLD</h2></div>
+        <div id="box9" class="box"><h2>SILVER</h2></div>
+        <div id="box10" class="box"><h2>PLATINUM</h2></div>
+        <div id="box11" class="box"><h2>STAINLESS</h2></div>
+    </div>
+
+    <!-- JEWELS -->
+    <center><h3><b>JEWELS</b></h3></center>
+    <div class="section">
+        <div id="box12" class="box"><h2>DIAMONDS</h2></div>
+        <div id="box13" class="box"><h2>RUBIES</h2></div>
+        <div id="box14" class="box"><h2>SAPPHIRES</h2></div>
+        <div id="box15" class="box"><h2>GARNETS</h2></div>
+        <div id="box16" class="box"><h2>AMETHYSTS</h2></div>
+        <div id="box17" class="box"><h2>EMERALDS</h2></div>
+        <div id="box18" class="box"><h2>TOPAZ</h2></div>
+    </div>
+
+    <!-- DESIGNS -->
+    <center><h3><b>DESIGNS</b></h3></center>
+    <div class="section">
+        <div id="box19" class="box"><h2>PLAIN</h2></div>
+        <div id="box20" class="box"><h2>FLOWERY</h2></div>
+        <div id="box21" class="box"><h2>AQUATIC</h2></div>
+        <div id="box22" class="box"><h2>FEATHERED</h2></div>
+    </div>
+
+</body>
+</html>

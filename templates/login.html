@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+</head>
+<body>
+
+     <nav>
+        <div class="navtitle">LUXURIOUS EARTH</div>
+        <div class="navbutton">
+            <a href="{{ url_for('login') }}">Login</a>
+            <a href="{{ url_for('register') }}">Register</a>
+            <a href="{{ url_for('explore') }}">Explore</a>
+            <a href="{{ url_for('order') }}">Order</a>
+            <a href="{{ url_for('admin') }}">Admin</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('profile') }}">Profile</a>
+            <a href="{{ url_for('home') }}">Home</a>
+        </div>
+    </nav>
+    
+    <div class="box">
+        <h2>Login</h2>
+
+<form action="{{ url_for('login') }}" method="POST">
+            <label for="username">Username</label>
+            <input type="text" name="username" placeholder="Tom Cruise" required>
+
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="Lord123" required>
+
+            <button type="submit">Login</button>
+        </form>
+
+            <p>If you dont have an account then click here  <a href="{{ url_for('register') }}">Register here</a></p>
+    </div>
+</body>
+</html>
